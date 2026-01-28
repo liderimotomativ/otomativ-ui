@@ -1,4 +1,4 @@
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const images = [
@@ -18,7 +18,6 @@ const marqueeImages = [...images, ...images, ...images];
 
 export default function CarEvolution() {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
         <section ref={ref} className="min-h-[50vh] py-12 bg-[var(--color-bg)] overflow-hidden relative flex flex-col justify-center">

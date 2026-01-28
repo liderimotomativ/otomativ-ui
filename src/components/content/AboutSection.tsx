@@ -1,4 +1,4 @@
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, type Variants } from 'framer-motion';
 import { useRef } from 'react';
 import { ShieldCheck, Award, Wrench, ArrowRight, Users, Clock, TrendingUp, CheckCircle } from 'lucide-react';
 
@@ -41,7 +41,7 @@ export default function AboutSection() {
         }
     };
 
-    const cardVariants = {
+    const cardVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: {
             opacity: 1,
