@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  otomativ-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: otomativ-ui
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - otomativ-network
+
+networks:
+  otomativ-network:
+    driver: bridge
