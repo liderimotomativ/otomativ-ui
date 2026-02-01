@@ -9,6 +9,7 @@ import CarEvolution from './components/comparison/CarEvolution';
 import WheelShowcase from './components/showcase/WheelShowcase';
 import CarShowcase from './components/showcase/CarShowcase';
 import TireInfo from './components/info/TireInfo';
+import LocationSection from './components/content/LocationSection';
 import './app.css'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         <CarEvolution />
         <CarShowcase />
         <TireInfo />
+        <LocationSection />
       </main>
       <Footer />
     </div>

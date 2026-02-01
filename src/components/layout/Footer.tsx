@@ -65,11 +65,21 @@ export default function Footer() {
                                 </div>
                                 <span className="text-sm font-light">0505 324 72 34</span>
                             </a>
-                            <div className="flex items-start gap-3 text-[var(--color-text)]/70">
-                                <div className="p-2 rounded-lg bg-[var(--color-surface)]/40 border border-[var(--color-border)] mt-0.5">
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=Liderim+Otomotiv+Gülyaka+Saim+Çıkrıkçı+Cd+No+101+35160+Karabağlar+İzmir"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-start gap-3 text-[var(--color-text)]/70 hover:text-[var(--color-accent)] transition-colors"
+                            >
+                                <div className="p-2 rounded-lg bg-[var(--color-surface)]/40 border border-[var(--color-border)] group-hover:border-[var(--color-accent)]/30 transition-colors mt-0.5">
                                     <MapPin size={16} strokeWidth={1.5} />
                                 </div>
-                                <span className="text-sm leading-relaxed font-light">Toptan ve perakende satış<br />Türkiye geneli kargo 📦</span>
+                                <span className="text-sm leading-relaxed font-light">
+                                    Gülyaka, Saim Çıkrıkçı Cd. No:101, 35160 Karabağlar/İzmir
+                                </span>
+                            </a>
+                            <div className="flex items-center gap-3 text-[var(--color-text)]/40 px-1">
+                                <span className="text-[10px] uppercase tracking-widest font-medium">Türkiye geneli kargo 📦</span>
                             </div>
                         </div>
                     </motion.div>
